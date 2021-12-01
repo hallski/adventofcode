@@ -1,4 +1,4 @@
-defmodule AdventOfCode.Day24 do
+defmodule AdventOfCode.Y2020.Day24 do
   def run1(input) do
     input
     |> setup_floor()

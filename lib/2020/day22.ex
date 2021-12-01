@@ -1,5 +1,5 @@
-defmodule AdventOfCode.Day22 do
-  alias AdventOfCode.Day22.Rules
+defmodule AdventOfCode.Y2020.Day22 do
+  alias AdventOfCode.Y2020.Day22.Rules
 
   def run_game(game) do
     AdventOfCode.Helpers.Data.read_from_file_no_split("2020/day22.txt")
@@ -30,7 +30,7 @@ defmodule AdventOfCode.Day22 do
   end
 end
 
-defmodule AdventOfCode.Day22.Rules.Normal do
+defmodule AdventOfCode.Y2020.Day22.Rules.Normal do
   def play([one, two]), do: play(one, two)
 
   def play([_ | _] = winning_hand, []), do: {:one, winning_hand}
@@ -45,7 +45,7 @@ defmodule AdventOfCode.Day22.Rules.Normal do
   end
 end
 
-defmodule AdventOfCode.Day22.Rules.Recursive do
+defmodule AdventOfCode.Y2020.Day22.Rules.Recursive do
   def play([one, two]), do: play(one, two, MapSet.new())
 
   def play([_ | _] = winning_hand, [], _history), do: {:one, winning_hand}

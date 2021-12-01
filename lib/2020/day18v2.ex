@@ -1,4 +1,4 @@
-defmodule AdventOfCode.Day18v2 do
+defmodule AdventOfCode.Y2020.Day18v2 do
   @supported_ops ["+", "-", "*", "/"]
 
   def run() do

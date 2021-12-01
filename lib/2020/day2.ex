@@ -1,4 +1,4 @@
-defmodule AdventOfCode.Day2 do
+defmodule AdventOfCode.Y2020.Day2 do
   alias AdventOfCode.Helpers.Op
   alias AdventOfCode.Helpers.Data
 
@@ -33,8 +33,8 @@ defmodule AdventOfCode.Day2 do
   end
 end
 
-answer = AdventOfCode.Day2.run1()
+answer = AdventOfCode.Y2020.Day2.run1()
 IO.puts("The answer to part 1 is #{answer}")
 
-answer = AdventOfCode.Day2.run2()
+answer = AdventOfCode.Y2020.Day2.run2()
 IO.puts("The answer to part 2 is #{answer}")

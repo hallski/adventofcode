@@ -1,4 +1,4 @@
-defmodule AdventOfCode.Day6 do
+defmodule AdventOfCode.Y2020.Day6 do
   alias AdventOfCode.Helpers.Data
   def run1(), do: run(fn group -> process_group(group, &MapSet.union/2) end)
   def run2(), do: run(fn group -> process_group(group, &MapSet.intersection/2) end)

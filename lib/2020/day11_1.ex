@@ -1,4 +1,4 @@
-defmodule AdventOfCode.Day11_1 do
+defmodule AdventOfCode.Y2020.Day11_1 do
   def test_data do
     """
     L.LL.LL.LL

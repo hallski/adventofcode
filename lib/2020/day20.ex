@@ -1,7 +1,7 @@
-defmodule AdventOfCode.Day20 do
-  alias AdventOfCode.Day20.Parser
-  alias AdventOfCode.Day20.Matrix
-  alias AdventOfCode.Day20.Tile
+defmodule AdventOfCode.Y2020.Day20 do
+  alias AdventOfCode.Y2020.Day20.Parser
+  alias AdventOfCode.Y2020.Day20.Matrix
+  alias AdventOfCode.Y2020.Day20.Tile
 
   def run(file_name) do
     AdventOfCode.Helpers.Data.read_from_file_no_split(file_name)
@@ -247,8 +247,8 @@ defmodule AdventOfCode.Day20 do
   end
 end
 
-defmodule AdventOfCode.Day20.Parser do
-  alias AdventOfCode.Day20.Tile
+defmodule AdventOfCode.Y2020.Day20.Parser do
+  alias AdventOfCode.Y2020.Day20.Tile
 
   def parse(input) do
     input
@@ -269,9 +269,9 @@ defmodule AdventOfCode.Day20.Parser do
   end
 end
 
-defmodule AdventOfCode.Day20.Tile do
-  alias AdventOfCode.Day20.Tile
-  alias AdventOfCode.Day20.Matrix
+defmodule AdventOfCode.Y2020.Day20.Tile do
+  alias AdventOfCode.Y2020.Day20.Tile
+  alias AdventOfCode.Y2020.Day20.Matrix
 
   defstruct id: nil, edges: %{}, matrix: nil, operations: []
 
@@ -349,7 +349,7 @@ defmodule AdventOfCode.Day20.Tile do
   end
 end
 
-defmodule AdventOfCode.Day20.Matrix do
+defmodule AdventOfCode.Y2020.Day20.Matrix do
   def apply_ops(matrix, []), do: matrix
 
   def apply_ops(matrix, [h | r]) do

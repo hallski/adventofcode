@@ -1,4 +1,4 @@
-defmodule AdventOfCode.Day21 do
+defmodule AdventOfCode.Y2020.Day21 do
   def run() do
     parsed =
       AdventOfCode.Helpers.Data.read_from_file_no_split("2020/day21.txt")

@@ -1,8 +1,8 @@
-defmodule AdventOfCode.Day16 do
+defmodule AdventOfCode.Y2020.Day16 do
   def run(input) do
     input
     |> String.split("\n\n", trim: true)
-    |> AdventOfCode.Day16.Parser.parse()
+    |> AdventOfCode.Y2020.Day16.Parser.parse()
   end
 
   def run1() do
@@ -98,7 +98,7 @@ defmodule AdventOfCode.Day16 do
   end
 end
 
-defmodule AdventOfCode.Day16.Parser do
+defmodule AdventOfCode.Y2020.Day16.Parser do
   def parse([fields, my_ticket, nearby]) do
     %{
       :fields => parse_fields(fields),

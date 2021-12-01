@@ -1,4 +1,4 @@
-defmodule AdventOfCode.Day13 do
+defmodule AdventOfCode.Y2020.Day13 do
   alias AdventOfCode.Helpers.Math
 
   def test_data() do

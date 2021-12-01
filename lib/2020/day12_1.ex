@@ -1,4 +1,4 @@
-defmodule AdventOfCode.Day12_1 do
+defmodule AdventOfCode.Y2020.Day12_1 do
   def test_data() do
     """
     F10

@@ -1,4 +1,4 @@
-defmodule AdventOfCode.Day25 do
+defmodule AdventOfCode.Y2020.Day25 do
   @subject_number 7
   @magic_number 20_201_227
 

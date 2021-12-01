@@ -1,7 +1,7 @@
-defmodule AdventOfCode.Day23.Ring do
+defmodule AdventOfCode.Y2020.Day23.Ring do
   defstruct current: nil, content: %{}, size: 0, min: nil, max: nil
 
-  alias AdventOfCode.Day23.Ring
+  alias AdventOfCode.Y2020.Day23.Ring
 
   def new(content) do
     first = Enum.take(content, 1) |> hd
@@ -64,11 +64,11 @@ defmodule AdventOfCode.Day23.Ring do
   end
 end
 
-defmodule AdventOfCode.Day23 do
+defmodule AdventOfCode.Y2020.Day23 do
   def test_input(), do: "389125467"
   def input(), do: "135468729"
 
-  alias AdventOfCode.Day23.Ring
+  alias AdventOfCode.Y2020.Day23.Ring
 
   def parse(raw) do
     raw

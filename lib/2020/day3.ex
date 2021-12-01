@@ -1,7 +1,7 @@
-defmodule AdventOfCode.Day3 do
+defmodule AdventOfCode.Y2020.Day3 do
   defstruct column: 0, row: 0, nr_of_rows: 0, nr_of_columns: 0, rows: [], visited: []
 
-  alias AdventOfCode.Day3
+  alias AdventOfCode.Y2020.Day3
   alias AdventOfCode.Helpers.Data
 
   @data Data.read_from_file("2020/day3.txt")

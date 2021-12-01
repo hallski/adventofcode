@@ -1,4 +1,4 @@
-defmodule AdventOfCode.Day10 do
+defmodule AdventOfCode.Y2020.Day10 do
   @data_dir Path.expand("../../data", __DIR__)
 
   def run() do

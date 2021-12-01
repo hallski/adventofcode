@@ -1,7 +1,7 @@
-defmodule AdventOfCode.Day8 do
+defmodule AdventOfCode.Y2020.Day8 do
   defstruct prg: [], acc: 0, cur: 0
 
-  alias AdventOfCode.Day8
+  alias AdventOfCode.Y2020.Day8
   alias AdventOfCode.Helpers.Data
 
   def create(prg), do: %Day8{prg: prg}

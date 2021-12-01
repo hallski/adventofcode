@@ -1,4 +1,4 @@
-defmodule AdventOfCode.Day17.NDimensions do
+defmodule AdventOfCode.Y2020.Day17.NDimensions do
   def test_data() do
     """
     .#.

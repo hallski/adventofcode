@@ -1,4 +1,4 @@
-defmodule AdventOfCode.Day12 do
+defmodule AdventOfCode.Y2020.Day12 do
   @data_dir Path.expand("../../data", __DIR__)
 
   # Data structure is {position, waypoint} where both position and waypoint are {east, north}

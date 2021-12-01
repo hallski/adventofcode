@@ -1,7 +1,7 @@
-defmodule AdventOfCode.Day7 do
+defmodule AdventOfCode.Y2020.Day7 do
   defstruct type: "", children: []
 
-  alias AdventOfCode.Day7
+  alias AdventOfCode.Y2020.Day7
   alias AdventOfCode.Helpers.Data
 
   def run() do

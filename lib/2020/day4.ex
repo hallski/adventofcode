@@ -1,4 +1,4 @@
-defmodule AdventOfCode.Day4 do
+defmodule AdventOfCode.Y2020.Day4 do
   defstruct birth_year: nil,
             issued: nil,
             expire: nil,
@@ -8,7 +8,7 @@ defmodule AdventOfCode.Day4 do
             pid: nil,
             country: nil
 
-  alias AdventOfCode.Day4
+  alias AdventOfCode.Y2020.Day4
   import AdventOfCode.Helpers.Data, only: [read_from_file_no_split: 1]
 
   def run() do

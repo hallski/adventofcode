@@ -1,4 +1,4 @@
-defmodule AdventOfCode.Day14 do
+defmodule AdventOfCode.Y2020.Day14 do
   @bits 36
 
   def test_data() do

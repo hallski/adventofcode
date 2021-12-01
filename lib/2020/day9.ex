@@ -1,4 +1,4 @@
-defmodule AdventOfCode.Day9 do
+defmodule AdventOfCode.Y2020.Day9 do
   alias AdventOfCode.Helpers.Data
 
   @preamble_size 25

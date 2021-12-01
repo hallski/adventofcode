@@ -1,7 +1,7 @@
-defmodule AdventOfCode.Day19 do
+defmodule AdventOfCode.Y2020.Day19 do
   import ExProf.Macro
 
-  alias AdventOfCode.Day19.Parser
+  alias AdventOfCode.Y2020.Day19.Parser
 
   def run1() do
     AdventOfCode.Helpers.Data.read_from_file_no_split("2020/day19.txt")
@@ -64,7 +64,7 @@ defmodule AdventOfCode.Day19 do
   end
 end
 
-defmodule AdventOfCode.Day19.Parser do
+defmodule AdventOfCode.Y2020.Day19.Parser do
   def parse(input) do
     input
     |> String.split("\n\n", trim: true)

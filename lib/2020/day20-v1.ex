@@ -1,8 +1,8 @@
 # Turned out this was a lot faster (but also makes some assumptions)
-defmodule AdventOfCode.Day20.V1 do
-  alias AdventOfCode.Day20.V1.Edge
-  alias AdventOfCode.Day20.V1.Parser
-  alias AdventOfCode.Day20.V1.Matrix
+defmodule AdventOfCode.Y2020.Day20.V1 do
+  alias AdventOfCode.Y2020.Day20.V1.Edge
+  alias AdventOfCode.Y2020.Day20.V1.Parser
+  alias AdventOfCode.Y2020.Day20.V1.Matrix
 
   def run_both() do
     relations =
@@ -236,7 +236,7 @@ defmodule AdventOfCode.Day20.V1 do
   end
 end
 
-defmodule AdventOfCode.Day20.V1.Parser do
+defmodule AdventOfCode.Y2020.Day20.V1.Parser do
   def parse(file) do
     AdventOfCode.Helpers.Data.read_from_file_no_split(file)
     |> String.split("\n\n", trim: true)
@@ -284,7 +284,7 @@ defmodule AdventOfCode.Day20.V1.Parser do
   end
 end
 
-defmodule AdventOfCode.Day20.V1.Edge do
+defmodule AdventOfCode.Y2020.Day20.V1.Edge do
   def ops(rotating, target) do
     ops(rotating, target, [])
     |> Enum.reverse()
@@ -359,7 +359,7 @@ defmodule AdventOfCode.Day20.V1.Edge do
   end
 end
 
-defmodule AdventOfCode.Day20.V1.Matrix do
+defmodule AdventOfCode.Y2020.Day20.V1.Matrix do
   def apply_ops([], matrix), do: matrix
 
   def apply_ops([h | r], matrix) do

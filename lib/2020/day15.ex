@@ -1,4 +1,4 @@
-defmodule AdventOfCode.Day15 do
+defmodule AdventOfCode.Y2020.Day15 do
   @end_turn 30_000_000 - 1
 
   def run() do

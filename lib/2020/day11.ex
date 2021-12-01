@@ -1,4 +1,4 @@
-defmodule AdventOfCode.Day11 do
+defmodule AdventOfCode.Y2020.Day11 do
   def run() do
     AdventOfCode.Helpers.Data.read_from_file("2020/day11.txt")
     |> to_room()
