@@ -22,14 +22,14 @@ defmodule AdventOfCode.Day14 do
   end
 
   def run() do
-    AdventOfCode.Helpers.Data.read_from_file("day14.txt")
+    AdventOfCode.Helpers.Data.read_from_file("2020/day14.txt")
     |> Enum.map(&parse_row/1)
     |> run_machine()
     |> sum_result()
   end
 
   def run2() do
-    AdventOfCode.Helpers.Data.read_from_file("day14.txt")
+    AdventOfCode.Helpers.Data.read_from_file("2020/day14.txt")
     # test_data2()
     |> Enum.map(&parse_row/1)
     |> run_machine2()

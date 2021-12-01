@@ -1,9 +1,9 @@
 defmodule AdventOfCode.Day10 do
-  @data_dir Path.expand("../data", __DIR__)
+  @data_dir Path.expand("../../data", __DIR__)
 
   def run() do
     @data_dir
-    |> Path.join("day10.txt")
+    |> Path.join("2020/day10.txt")
     |> File.read!()
     |> String.split("\n", trim: true)
     |> Enum.map(&String.to_integer/1)

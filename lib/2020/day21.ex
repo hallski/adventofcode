@@ -1,7 +1,7 @@
 defmodule AdventOfCode.Day21 do
   def run() do
     parsed =
-      AdventOfCode.Helpers.Data.read_from_file_no_split("day21.txt")
+      AdventOfCode.Helpers.Data.read_from_file_no_split("2020/day21.txt")
       |> parse()
 
     {solve1(parsed), solve2(parsed)}

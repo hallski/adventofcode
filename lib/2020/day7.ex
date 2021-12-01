@@ -21,7 +21,7 @@ defmodule AdventOfCode.Day7 do
   end
 
   def process_input() do
-    "day7.txt"
+    "2020/day7.txt"
     |> Data.read_from_file()
     |> Enum.map(&parse_input/1)
     |> Enum.reduce(%{}, fn bag, acc -> Map.put(acc, bag.type, bag) end)

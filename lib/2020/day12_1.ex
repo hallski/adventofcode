@@ -13,7 +13,7 @@ defmodule AdventOfCode.Day12_1 do
   # Data structure is {position, direction} where both position and direction are {west, north}
   def run() do
     # test_data()
-    AdventOfCode.Helpers.Data.read_from_file("day12.txt")
+    AdventOfCode.Helpers.Data.read_from_file("2020/day12.txt")
     |> iterate()
     |> IO.inspect()
     |> distance()

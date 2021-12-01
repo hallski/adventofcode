@@ -2,7 +2,7 @@ defmodule AdventOfCode.Day18v2 do
   @supported_ops ["+", "-", "*", "/"]
 
   def run() do
-    AdventOfCode.Helpers.Data.read_from_file("day18.txt")
+    AdventOfCode.Helpers.Data.read_from_file("2020/day18.txt")
     |> Enum.map(&calculate/1)
     |> Enum.sum()
   end

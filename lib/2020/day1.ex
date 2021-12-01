@@ -2,7 +2,7 @@ defmodule AdventOfCode.Day1 do
   alias AdventOfCode.Helpers.Data
 
   defp get_numbers() do
-    Data.read_from_file("day1.txt")
+    Data.read_from_file("2020/day1.txt")
     |> Enum.map(&String.to_integer/1)
   end
 

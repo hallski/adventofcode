@@ -6,7 +6,7 @@ defmodule AdventOfCode.Day20.V1 do
 
   def run_both() do
     relations =
-      "day20.txt"
+      "2020/day20.txt"
       |> Parser.parse()
       |> build_relations()
 

@@ -6,13 +6,13 @@ defmodule AdventOfCode.Day16 do
   end
 
   def run1() do
-    AdventOfCode.Helpers.Data.read_from_file_no_split("day16.txt")
+    AdventOfCode.Helpers.Data.read_from_file_no_split("2020/day16.txt")
     |> run()
     |> part1()
   end
 
   def run2() do
-    AdventOfCode.Helpers.Data.read_from_file_no_split("day16.txt")
+    AdventOfCode.Helpers.Data.read_from_file_no_split("2020/day16.txt")
     |> run()
     |> part2()
   end

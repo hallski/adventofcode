@@ -1,4 +1,4 @@
-defmodule AdventOfCode.Day18 do
+defmodule AdventOfCode.Y2020.Day18 do
   @numbers 0..9 |> Enum.map(&Integer.to_string/1)
 
   def test_data() do
@@ -7,7 +7,7 @@ defmodule AdventOfCode.Day18 do
   end
 
   def run() do
-    AdventOfCode.Helpers.Data.read_from_file("day18.txt")
+    AdventOfCode.Helpers.Data.read_from_file("2020/day18.txt")
     |> Enum.map(&calculate/1)
     |> Enum.sum()
   end

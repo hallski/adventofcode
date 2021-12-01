@@ -20,7 +20,7 @@ defmodule AdventOfCode.Day20 do
   ]
 
   def run_both() do
-    arranged_tiles = run("day20.txt")
+    arranged_tiles = run("2020/day20.txt")
 
     {solve1(arranged_tiles), solve2(arranged_tiles)}
   end

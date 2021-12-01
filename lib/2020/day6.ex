@@ -4,7 +4,7 @@ defmodule AdventOfCode.Day6 do
   def run2(), do: run(fn group -> process_group(group, &MapSet.intersection/2) end)
 
   defp run(group_processor) do
-    "day6.txt"
+    "2020/day6.txt"
     |> Data.read_from_file_no_split()
     |> String.split("\n\n", trim: true)
     |> Enum.map(group_processor)

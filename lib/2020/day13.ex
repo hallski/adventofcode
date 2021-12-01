@@ -19,7 +19,7 @@ defmodule AdventOfCode.Day13 do
 
   def run() do
     x =
-      AdventOfCode.Helpers.Data.read_from_file("day13.txt")
+      AdventOfCode.Helpers.Data.read_from_file("2020/day13.txt")
       |> parse()
 
     clock = Stream.iterate(0, &(&1 + 1))
@@ -79,7 +79,7 @@ defmodule AdventOfCode.Day13 do
   end
 
   def run2() do
-    AdventOfCode.Helpers.Data.read_from_file("day13.txt")
+    AdventOfCode.Helpers.Data.read_from_file("2020/day13.txt")
     |> (fn [_, busses] -> String.split(busses, ",", trim: true) end).()
     |> Enum.with_index()
     |> Enum.filter(fn {x, _} -> x != "x" end)

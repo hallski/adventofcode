@@ -5,7 +5,7 @@ defmodule AdventOfCode.Day9 do
   def find_weakness() do
     key = find_key()
 
-    Data.read_from_file("day9.txt")
+    Data.read_from_file("2020/day9.txt")
     |> Enum.map(&String.to_integer/1)
     |> Enum.filter(fn x -> x < key end)
     |> find_range(key)
@@ -14,7 +14,7 @@ defmodule AdventOfCode.Day9 do
   end
 
   def find_key() do
-    Data.file_stream("day9.txt")
+    Data.file_stream("2020/day9.txt")
     |> Stream.map(&String.to_integer(&1))
     |> Stream.chunk_every(@preamble_size + 1, 1)
     |> Stream.map(&List.pop_at(&1, -1))

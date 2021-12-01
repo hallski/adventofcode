@@ -12,7 +12,7 @@ defmodule AdventOfCode.Day5 do
   end
 
   def process_file() do
-    "day5.txt"
+    "2020/day5.txt"
     |> Data.read_from_file()
     |> Enum.map(&process_boarding_pass/1)
     |> Enum.map(&calculate_seat/1)

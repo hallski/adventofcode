@@ -1,6 +1,6 @@
 defmodule AdventOfCode.Day11 do
   def run() do
-    AdventOfCode.Helpers.Data.read_from_file("day11.txt")
+    AdventOfCode.Helpers.Data.read_from_file("2020/day11.txt")
     |> to_room()
     |> Stream.iterate(&iterate/1)
     |> Stream.chunk_every(2, 1)

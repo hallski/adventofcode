@@ -12,7 +12,7 @@ defmodule AdventOfCode.Day4 do
   import AdventOfCode.Helpers.Data, only: [read_from_file_no_split: 1]
 
   def run() do
-    read_from_file_no_split("day4.txt")
+    read_from_file_no_split("2020/day4.txt")
     |> String.split("\n\n")
     |> Enum.map(&process_raw_data/1)
     |> Enum.filter(&is_valid/1)

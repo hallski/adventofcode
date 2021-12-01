@@ -4,13 +4,13 @@ defmodule AdventOfCode.Day19 do
   alias AdventOfCode.Day19.Parser
 
   def run1() do
-    AdventOfCode.Helpers.Data.read_from_file_no_split("day19.txt")
+    AdventOfCode.Helpers.Data.read_from_file_no_split("2020/day19.txt")
     |> Parser.parse()
     |> count_valid()
   end
 
   def run2() do
-    AdventOfCode.Helpers.Data.read_from_file_no_split("day19.txt")
+    AdventOfCode.Helpers.Data.read_from_file_no_split("2020/day19.txt")
     |> Parser.parse()
     |> patch_rules()
     |> count_valid()

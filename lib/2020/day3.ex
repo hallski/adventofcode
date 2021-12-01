@@ -4,7 +4,7 @@ defmodule AdventOfCode.Day3 do
   alias AdventOfCode.Day3
   alias AdventOfCode.Helpers.Data
 
-  @data Data.read_from_file("day3.txt")
+  @data Data.read_from_file("2020/day3.txt")
 
   def run() do
     [{1, 1}, {3, 1}, {5, 1}, {7, 1}, {1, 2}]

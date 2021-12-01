@@ -18,7 +18,7 @@ defmodule AdventOfCode.Day8 do
   end
 
   def run_machine() do
-    Data.read_from_file("day8.txt")
+    Data.read_from_file("2020/day8.txt")
     |> Enum.map(&parse_line/1)
     |> create()
     |> progress([])

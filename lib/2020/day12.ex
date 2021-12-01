@@ -1,5 +1,5 @@
 defmodule AdventOfCode.Day12 do
-  @data_dir Path.expand("../data", __DIR__)
+  @data_dir Path.expand("../../data", __DIR__)
 
   # Data structure is {position, waypoint} where both position and waypoint are {east, north}
   @initial_boat {{0, 0}, {10, 1}}
@@ -43,7 +43,7 @@ defmodule AdventOfCode.Day12 do
 
   def run() do
     @data_dir
-    |> Path.join("day12.txt")
+    |> Path.join("2020/day12.txt")
     |> File.read!()
     |> String.split("\n", trim: true)
     |> run_instructions()

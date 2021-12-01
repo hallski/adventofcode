@@ -11,7 +11,7 @@ defmodule AdventOfCode.Day2 do
   end
 
   defp run(check) do
-    Data.read_from_file("day2.txt")
+    Data.read_from_file("2020/day2.txt")
     |> Enum.map(&process_line/1)
     |> Enum.count(check)
   end

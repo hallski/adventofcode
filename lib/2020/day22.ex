@@ -2,7 +2,7 @@ defmodule AdventOfCode.Day22 do
   alias AdventOfCode.Day22.Rules
 
   def run_game(game) do
-    AdventOfCode.Helpers.Data.read_from_file_no_split("day22.txt")
+    AdventOfCode.Helpers.Data.read_from_file_no_split("2020/day22.txt")
     |> parse()
     |> game.()
     |> score()
