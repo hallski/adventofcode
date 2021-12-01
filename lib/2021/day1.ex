@@ -15,7 +15,7 @@ defmodule AdventOfCode.Y2021.Day1 do
   end
 
   def real_data() do
-    AdventOfCode.Helpers.Data.read_from_file("2021/day1.txt")
+    AdventOfCode.Helpers.Data.read_from_file_no_split("2021/day1.txt")
   end
 
   def run1(data) do
@@ -32,6 +32,7 @@ defmodule AdventOfCode.Y2021.Day1 do
 
   defp parse_input(data) do
     data
+    |> String.split("\n", trim: true)
     |> Enum.map(&String.to_integer/1)
   end
 
