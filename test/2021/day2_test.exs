@@ -12,48 +12,40 @@ defmodule AdventOfCode.Y2021.Day2Test do
   end
 
   test "move1 forward" do
-    assert Day2.move1(%{:h => 15, :d => 0}, "forward 17") == %{:h => 32, :d => 0}
+    assert Day2.move1("forward 17", %{h: 15, d: 0}) == %{h: 32, d: 0}
   end
 
   test "move1 up" do
-    assert Day2.move1(%{:h => 12, :d => 10}, "up 7") == %{:h => 12, :d => 3}
+    assert Day2.move1("up 7", %{h: 12, d: 10}) == %{h: 12, d: 3}
   end
 
   test "move1 down" do
-    assert Day2.move1(%{:h => 12, :d => 10}, "down 13") == %{:h => 12, :d => 23}
+    assert Day2.move1("down 13", %{h: 12, d: 10}) == %{h: 12, d: 23}
   end
 
   test "move2" do
-    val = Day2.move2(%{h: 0, d: 0, aim: 0}, "forward 5")
+    val = Day2.move2("forward 5", %{h: 0, d: 0, aim: 0})
     assert val == %{h: 5, d: 0, aim: 0}
-    val = Day2.move2(val, "down 5")
+    val = Day2.move2("down 5", val)
     assert val == %{val | aim: 5}
-    val = Day2.move2(val, "forward 8")
+    val = Day2.move2("forward 8", val)
     assert val == %{val | h: 13, d: 40}
   end
 
   test "move2 forward 5" do
-    assert Day2.move2(%{:h => 5, :d => 0, :aim => 0}, "forward 5") == %{
-             :h => 10,
-             :d => 0,
-             :aim => 0
-           }
+    assert Day2.move2("forward 5", %{h: 5, d: 0, aim: 0}) == %{h: 10, d: 0, aim: 0}
   end
 
   test "move2 forward with an aim" do
-    assert Day2.move2(%{:h => 4, :d => 0, :aim => 5}, "forward 5") == %{
-             h: 9,
-             d: 25,
-             aim: 5
-           }
+    assert Day2.move2("forward 5", %{h: 4, d: 0, aim: 5}) == %{h: 9, d: 25, aim: 5}
   end
 
   test "move2 up" do
-    assert Day2.move2(%{h: 10, d: 10, aim: 10}, "up 7") == %{h: 10, d: 10, aim: 3}
+    assert Day2.move2("up 7", %{h: 10, d: 10, aim: 10}) == %{h: 10, d: 10, aim: 3}
   end
 
   test "move2 down" do
-    assert Day2.move2(%{h: 10, d: 10, aim: 10}, "down 13") == %{h: 10, d: 10, aim: 23}
+    assert Day2.move2("down 13", %{h: 10, d: 10, aim: 10}) == %{h: 10, d: 10, aim: 23}
   end
 
   defp test_data() do
