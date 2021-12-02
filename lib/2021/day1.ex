@@ -1,19 +1,4 @@
 defmodule AdventOfCode.Y2021.Day1 do
-  def test_data() do
-    """
-    199
-    200
-    208
-    210
-    200
-    207
-    240
-    269
-    260
-    263
-    """
-  end
-
   def real_data() do
     AdventOfCode.Helpers.Data.read_from_file_no_split("2021/day1.txt")
   end
